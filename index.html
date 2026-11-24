@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khan Abdul Motaleb | M&E Associate & Urban Planner</title>
+  <meta name="description" content="Professional portfolio of Khan Abdul Motaleb - Monitoring & Evaluation (M&E/MEAL) Specialist, Urban Planner, and GIS/Data Analyst." />
+  
+  <style>
+    /* ==========================================================================
+       MODERN CSS DESIGN SYSTEM & VARIABLES
+       ========================================================================== */
+    :root {
+      --primary: #00689D;         /* UN/UNDP Deep Blue */
+      --primary-light: #2D9CDB;   /* Cyan Accent */
+      --secondary: #10B981;       /* Climate / Ecological Emerald */
+      --dark-bg: #0F172A;         /* Slate Dark */
+      --card-bg: #1E293B;         /* Card Surface */
+      --card-border: #334155;     /* Subtle Outline */
+      --text-main: #F8FAFC;       /* Primary Typography */
+      --text-muted: #94A3B8;      /* Secondary Typography */
+      --accent-glow: rgba(45, 156, 219, 0.15);
+      --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-family: var(--font-stack);
+      background-color: var(--dark-bg);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+
+    a {
+      color: var(--primary-light);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    a:hover {
+      color: var(--secondary);
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--card-border);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 4.5rem;
+    }
+
+    .brand {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .brand-tag {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      padding: 0.2rem 0.55rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #FFF;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.75rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--text-muted);
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary-light);
+    }
+
+    .cta-btn {
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+      color: #FFF !important;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(45, 156, 219, 0.35);
+    }
+
+    /* ==========================================================================
+       HERO SECTION
+       ========================================================================== */
+    .hero {
+      padding: 6rem 0 4.5rem;
+      position: relative;
+    }
+
+    .hero-content {
+      display: grid;
+      grid-template-columns: 1.3fr 0.9fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 0.85rem;
+      background: rgba(45, 156, 219, 0.12);
+      border: 1px solid rgba(45, 156, 219, 0.3);
+      border-radius: 999px;
+      font-size: 0.85rem;
+      color: var(--primary-light);
+      margin-bottom: 1.25rem;
+      font-weight: 500;
+    }
+
+    .badge-pill::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background: var(--secondary);
+      border-radius: 50%;
+      box-shadow: 0 0 8px var(--secondary);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero h1 span {
+      background: linear-gradient(135deg, var(--primary-light), var(--secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      font-size: 1.125rem;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+      max-width: 620px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-secondary {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      color: var(--text-main);
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .btn-secondary:hover {
+      background: var(--card-border);
+      color: #FFF;
+    }
+
+    .stat-card-group {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .stat-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      padding: 1.5rem;
+      border-radius: 12px;
+      text-align: center;
+      transition: var(--transition);
+    }
+
+    .stat-card:hover {
+      border-color: var(--primary-light);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px var(--accent-glow);
+    }
+
+    .stat-number {
+      font-size: 2.25rem;
+      font-weight: 800;
+      color: var(--primary-light);
+      line-height: 1;
+      margin-bottom: 0.4rem;
+    }
+
+    .stat-label {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* ==========================================================================
+       SECTION COMMONS
+       ========================================================================== */
+    section {
+      padding: 5rem 0;
+      border-top: 1px solid rgba(51, 65, 85, 0.4);
+    }
+
+    .section-header {
+      margin-bottom: 3rem;
+      text-align: left;
+    }
+
+    .section-eyebrow {
+      color: var(--secondary);
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    .section-title {
+      font-size: 2.25rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    /* ==========================================================================
+       SKILLS & PILLARS GRID
+       ========================================================================== */
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .feature-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 2rem;
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .feature-card:hover {
+      border-color: var(--primary-light);
+      transform: translateY(-4px);
+    }
+
+    .card-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 8px;
+      background: rgba(45, 156, 219, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+      color: var(--primary-light);
+    }
+
+    .feature-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .feature-card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    .tag {
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid var(--card-border);
+      color: var(--primary-light);
+      padding: 0.2rem 0.55rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 500;
+    }
+
+    /* ==========================================================================
+       TIMELINE / EXPERIENCE
+       ========================================================================== */
+    .timeline {
+      position: relative;
+      border-left: 2px solid var(--card-border);
+      margin-left: 1rem;
+      padding-left: 2rem;
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 2.5rem;
+    }
+
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: -2.55rem;
+      top: 0.2rem;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      background: var(--dark-bg);
+      border: 2px solid var(--secondary);
+    }
+
+    .timeline-date {
+      font-size: 0.85rem;
+      color: var(--secondary);
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+      display: inline-block;
+    }
+
+    .timeline-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.2rem;
+    }
+
+    .timeline-company {
+      font-size: 0.95rem;
+      color: var(--primary-light);
+      font-weight: 500;
+      margin-bottom: 0.75rem;
+    }
+
+    .timeline-desc {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .timeline-desc ul {
+      margin-left: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .timeline-desc li {
+      margin-bottom: 0.4rem;
+    }
+
+    /* ==========================================================================
+       PROJECTS & CASE STUDIES
+       ========================================================================== */
+    .project-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 1.75rem;
+      transition: var(--transition);
+    }
+
+    .project-card:hover {
+      border-color: var(--secondary);
+      transform: translateY(-3px);
+    }
+
+    .project-category {
+      font-size: 0.75rem;
+      color: var(--secondary);
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+
+    .project-body {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 1.25rem;
+    }
+
+    /* ==========================================================================
+       EDUCATION & CREDENTIALS
+       ========================================================================== */
+    .edu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .edu-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 10px;
+      padding: 1.5rem;
+    }
+
+    .edu-degree {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+
+    .edu-inst {
+      color: var(--primary-light);
+      font-size: 0.9rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .edu-meta {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       FOOTER & CONTACT
+       ========================================================================== */
+    footer {
+      background: #090D16;
+      border-top: 1px solid var(--card-border);
+      padding: 4rem 0 2.5rem;
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    .contact-box h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .contact-box p {
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+      max-width: 500px;
+    }
+
+    .footer-links h4 {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      color: var(--text-main);
+    }
+
+    .footer-links ul {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 0.5rem;
+    }
+
+    .copyright {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      border-top: 1px solid rgba(51, 65, 85, 0.3);
+      padding-top: 2rem;
+    }
+
+    /* ==========================================================================
+       RESPONSIVE BREAKPOINTS
+       ========================================================================== */
+    @media (max-width: 860px) {
+      .hero-content {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+      .nav-links {
+        display: none; /* Can be toggled with hamburger in extended setups */
+      }
+      .footer-content {
+        grid-template-columns: 1fr;
+      }
+      .hero h1 {
+        font-size: 2.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">
+          Khan Abdul Motaleb
+          <span class="brand-tag">Portfolio</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#competencies">Expertise</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Key Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact" class="cta-btn">Connect</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="about">
+    <div class="container">
+      <div class="hero-content">
+        <div>
+          <div class="badge-pill">M&E Associate &middot; Development Specialist</div>
+          <h1>Driving Impact Through <span>Evidence-Based Planning</span> & Adaptation</h1>
+          <p>
+            Development practitioner with 13+ years of expertise spanning Monitoring & Evaluation (MEAL), 
+            Urban & Regional Planning, and GIS spatial intelligence. Specialized in climate adaptation, disaster risk reduction (DRR), 
+            and UN/UNDP results framework architecture.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="cta-btn">Explore Portfolio Work</a>
+            <a href="#contact" class="btn-secondary">Get in Touch</a>
+          </div>
+        </div>
+        <div class="stat-card-group">
+          <div class="stat-card">
+            <div class="stat-number">13+</div>
+            <div class="stat-label">Years of Experience</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Field Missions & Reports</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Results Alignment (RBM)</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">GIS</div>
+            <div class="stat-label">Spatial & Hydrological Modeling</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Competencies -->
+  <section id="competencies">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Professional Pillars</span>
+        <h2 class="section-title">Core Competencies & Tool Stack</h2>
+      </div>
+      <div class="grid-3">
+        <!-- Pillar 1 -->
+        <div class="feature-card">
+          <div>
+            <div class="card-icon">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 20V10M18 20V4M6 20v-4"/></svg>
+            </div>
+            <h3>MEAL & Results-Based Management</h3>
+            <p>
+              Designing and maintaining comprehensive project M&E frameworks, ROAR indicators, CPD/UNSDCF outputs, and baseline/endline evaluation reports.
+            </p>
+          </div>
+          <div class="tag-cloud">
+            <span class="tag">Theory of Change</span>
+            <span class="tag">LogFrames</span>
+            <span class="tag">ROAR Reporting</span>
+            <span class="tag">SPSS & Stata</span>
+            <span class="tag">KoboToolbox</span>
+          </div>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="feature-card">
+          <div>
+            <div class="card-icon">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+            </div>
+            <h3>GIS Mapping & Spatial Modeling</h3>
+            <p>
+              Spatial analysis for coastal vulnerability, groundwater quality parameters, road connectivity extractions, and union parishad infrastructure planning.
+            </p>
+          </div>
+          <div class="tag-cloud">
+            <span class="tag">ArcGIS / QGIS</span>
+            <span class="tag">Google Earth Pro</span>
+            <span class="tag">Spatial Interpolation</span>
+            <span class="tag">Network Mapping</span>
+            <span class="tag">Water Quality Analysis</span>
+          </div>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="feature-card">
+          <div>
+            <div class="card-icon">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+            </div>
+            <h3>Climate Adaptation & DRR</h3>
+            <p>
+              Field assessments and verification of climate-resilient housing, embankment protection schemes, saline intrusion solutions, and community livelihoods.
+            </p>
+          </div>
+          <div class="tag-cloud">
+            <span class="tag">Resilient Housing</span>
+            <span class="tag">Embankment Rehabilitaion</span>
+            <span class="tag">Coastal Afforestation</span>
+            <span class="tag">Community Livelihoods</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Professional Experience -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Career Trajectory</span>
+        <h2 class="section-title">Professional Experience</h2>
+      </div>
+
+      <div class="timeline">
+        <!-- Experience Item 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">UNDP Bangladesh</span>
+          <h3 class="timeline-title">M&E Associate / Development Specialist</h3>
+          <div class="timeline-company">Climate Adaptation, Urban Resilience & Results Reporting</div>
+          <div class="timeline-desc">
+            <ul>
+              <li>Synthesized field mission narratives and qualitative/quantitative indicators for climate adaptation interventions across Bhola, Rangpur, and coastal belts.</li>
+              <li>Ensured rigorous compliance of project targets with ROAR (Results Oriented Annual Report), CPD, and UNSDCF development frameworks.</li>
+              <li>Monitored progress on climate-resilient housing loans, low-cost community shelter verification, and embankment rehabilitation initiatives.</li>
+              <li>Assisted in MIS data verification, field spot checks, and multi-stakeholder progress reviews.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience Item 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">Save the Children International / Development Sector</span>
+          <h3 class="timeline-title">Technical Specialist – MEAL / Monitoring Specialist</h3>
+          <div class="timeline-company">Shishuder Jonno Program & Economic Inclusion Initiatives</div>
+          <div class="timeline-desc">
+            <ul>
+              <li>Led monitoring, evaluation, accountability, and learning (MEAL) systems for youth livelihood and inclusive community initiatives.</li>
+              <li>Conducted research and operationalized evaluations on economic inclusion pathways for adolescents with disabilities in coastal and climate-vulnerable communities.</li>
+              <li>Designed digital data collection workflows, indicator tracking sheets (IPT), and real-time dashboard analytics.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience Item 3 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">Consultancy & Advisory Engagements</span>
+          <h3 class="timeline-title">Urban Planner & Spatial Data Consultant</h3>
+          <div class="timeline-company">Young Consultants / Independent Advisory</div>
+          <div class="timeline-desc">
+            <ul>
+              <li>Prepared comprehensive technical and financial proposals for national development consultancies, aligning multi-disciplinary team CVs with client tender specifications.</li>
+              <li>Spearheaded GIS road network extraction and union spatial planning for localized administrative units (e.g., Lakkhitary and Mujibnagar).</li>
+              <li>Compiled detailed groundwater quality spatial parameter analyses across Barishal Division to identify salinity gradients and safe aquifer zones.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Projects & Deliverables -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Portfolio Case Studies</span>
+        <h2 class="section-title">Selected Projects & Research</h2>
+      </div>
+
+      <div class="grid-3">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-category">Climate Resilience & M&E</div>
+          <h3 class="project-title">Coastal Housing & Embankment Verification</h3>
+          <p class="project-body">
+            Conducted on-site verification and results reporting for climate-resilient housing structures and community embankment reinforcements in vulnerable riverine unions across Bhola and Rangpur.
+          </p>
+          <div class="tag-cloud">
+            <span class="tag">M&E Spot Checks</span>
+            <span class="tag">Vulnerability Audit</span>
+            <span class="tag">UNDP Bangladesh</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-category">Spatial Intelligence</div>
+          <h3 class="project-title">Barishal Division Groundwater Quality Mapping</h3>
+          <p class="project-body">
+            Generated multi-parameter spatial GIS maps depicting salinity, arsenic, and iron distribution in coastal aquifers, assisting regional water supply planning and DRR assessments.
+          </p>
+          <div class="tag-cloud">
+            <span class="tag">GIS Spatial Analysis</span>
+            <span class="tag">Water Quality</span>
+            <span class="tag">Barishal Region</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-category">Social Inclusion Research</div>
+          <h3 class="project-title">Economic Inclusion for Persons with Disabilities</h3>
+          <p class="project-body">
+            Author and presenter of empirical poster research analyzing income-generating activities (IGA) and economic empowerment models for youth with disabilities at national conference symposia.
+          </p>
+          <div class="tag-cloud">
+            <span class="tag">Inclusive MEAL</span>
+            <span class="tag">Conference Presentation</span>
+            <span class="tag">Livelihoods</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Credentials -->
+  <section id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Academic Credentials</span>
+        <h2 class="section-title">Education & Affiliations</h2>
+      </div>
+
+      <div class="edu-grid">
+        <div class="edu-card">
+          <div class="edu-degree">Master of Development Studies (MDS)</div>
+          <div class="edu-inst">Islamic University</div>
+          <div class="edu-meta">Conferred 2016 &middot; Major in Development Economics, Policy & Research Methodologies</div>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-degree">Bachelor of Urban & Rural Planning (BURP)</div>
+          <div class="edu-inst">Khulna University</div>
+          <div class="edu-meta">Conferred 2011 &middot; Regional Planning, Infrastructure Architecture, GIS & Environmental Modeling</div>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-degree">Professional Affiliation</div>
+          <div class="edu-inst">Bangladesh Institute of Planners (BIP)</div>
+          <div class="edu-meta">Associate Member &middot; Urban, Regional, and Environmental Planning Network</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer / Contact Section -->
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-content">
+        <div class="contact-box">
+          <h3>Collaborate or Connect</h3>
+          <p>
+            Interested in discussing Monitoring & Evaluation frameworks, climate adaptation initiatives, or GIS spatial analytics? Feel free to reach out.
+          </p>
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <a href="mailto:khan.motaleb@undp.org" class="cta-btn">Send Email Inquiry</a>
+            <a href="#about" class="btn-secondary">Return to Top</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#competencies">Core Expertise</a></li>
+            <li><a href="#experience">Field Experience</a></li>
+            <li><a href="#projects">Key Projects</a></li>
+            <li><a href="#education">Education</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; 2026 Khan Abdul Motaleb. All rights reserved. &middot; Professional M&E Portfolio.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Khan Abdul Motaleb | M&E Associate & Urban Planner</title>
-  <meta name="description" content="Professional portfolio of Khan Abdul Motaleb - Monitoring & Evaluation (M&E/MEAL) Specialist, Urban Planner, and GIS/Data Analyst." />
-  
+  <title>Khan Abdul Motaleb | Monitoring, Evaluation, Accountability and Learning (MEAL) Expert</title>
+  <meta name="description" content="Professional portfolio of Khan Abdul Motaleb - Monitoring, Evaluation, Accountability and Learning (MEAL) Expert with 13.4+ years of expertise across UN agencies, INGOs, Urban & Rural Planning, GIS Spatial Intelligence, and Climate Adaptation." />
+
   <style>
     /* ==========================================================================
        MODERN CSS DESIGN SYSTEM & VARIABLES
@@ -102,6 +102,7 @@
       display: flex;
       gap: 1.75rem;
       list-style: none;
+      align-items: center;
     }
 
     .nav-links a {
@@ -122,6 +123,9 @@
       font-weight: 600;
       font-size: 0.9rem;
       border: 1px solid rgba(255, 255, 255, 0.1);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
     }
 
     .cta-btn:hover {
@@ -155,7 +159,7 @@
       font-size: 0.85rem;
       color: var(--primary-light);
       margin-bottom: 1.25rem;
-      font-weight: 500;
+      font-weight: 600;
     }
 
     .badge-pill::before {
@@ -202,6 +206,9 @@
       border-radius: 6px;
       font-weight: 600;
       font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
     }
 
     .btn-secondary:hover {
@@ -350,7 +357,7 @@
 
     .timeline-item {
       position: relative;
-      margin-bottom: 2.5rem;
+      margin-bottom: 3rem;
     }
 
     .timeline-item:last-child {
@@ -400,7 +407,7 @@
     }
 
     .timeline-desc li {
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.45rem;
     }
 
     /* ==========================================================================
@@ -412,6 +419,9 @@
       border-radius: 12px;
       padding: 1.75rem;
       transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     .project-card:hover {
@@ -474,12 +484,68 @@
     }
 
     /* ==========================================================================
-       FOOTER & CONTACT
+       CONTACT & FOOTER
        ========================================================================== */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .contact-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      transition: var(--transition);
+    }
+
+    .contact-card:hover {
+      border-color: var(--primary-light);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .contact-card-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 8px;
+      background: rgba(45, 156, 219, 0.15);
+      color: var(--primary-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .contact-card-info h4 {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.25rem;
+    }
+
+    .contact-card-info a,
+    .contact-card-info p {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text-main);
+      word-break: break-all;
+    }
+
+    .contact-card-info a:hover {
+      color: var(--secondary);
+    }
+
     footer {
       background: #090D16;
       border-top: 1px solid var(--card-border);
-      padding: 4rem 0 2.5rem;
+      padding: 4.5rem 0 2.5rem;
     }
 
     .footer-content {
@@ -490,14 +556,15 @@
     }
 
     .contact-box h3 {
-      font-size: 1.5rem;
+      font-size: 1.75rem;
+      font-weight: 800;
       margin-bottom: 0.75rem;
     }
 
     .contact-box p {
       color: var(--text-muted);
-      margin-bottom: 1.5rem;
-      max-width: 500px;
+      margin-bottom: 1.75rem;
+      max-width: 580px;
     }
 
     .footer-links h4 {
@@ -531,7 +598,7 @@
         gap: 2.5rem;
       }
       .nav-links {
-        display: none; /* Can be toggled with hamburger in extended setups */
+        display: none;
       }
       .footer-content {
         grid-template-columns: 1fr;
@@ -550,7 +617,7 @@
       <nav>
         <div class="brand">
           Khan Abdul Motaleb
-          <span class="brand-tag">Portfolio</span>
+          <span class="brand-tag">MEAL Expert</span>
         </div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -558,7 +625,10 @@
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Key Projects</a></li>
           <li><a href="#education">Education</a></li>
-          <li><a href="#contact" class="cta-btn">Connect</a></li>
+          <li><a href="#contact" class="cta-btn">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            Contact
+          </a></li>
         </ul>
       </nav>
     </div>
@@ -569,34 +639,39 @@
     <div class="container">
       <div class="hero-content">
         <div>
-          <div class="badge-pill">M&E Associate &middot; Development Specialist</div>
+          <div class="badge-pill">Monitoring, Evaluation, Accountability and Learning (MEAL) Expert</div>
           <h1>Driving Impact Through <span>Evidence-Based Planning</span> & Adaptation</h1>
           <p>
-            Development practitioner with 13+ years of expertise spanning Monitoring & Evaluation (MEAL), 
-            Urban & Regional Planning, and GIS spatial intelligence. Specialized in climate adaptation, disaster risk reduction (DRR), 
-            and UN/UNDP results framework architecture.
+            Monitoring, Evaluation, Accountability and Learning (MEAL) Expert with <strong>13.4+ years</strong> of multidisciplinary leadership across United Nations agencies, international NGOs, and high-level national development consultancies. Specialized in Results-Based Management (RBM), indicator governance, GIS spatial modeling, Urban & Rural Planning, and Disaster Risk Reduction (DRR).
           </p>
           <div class="hero-actions">
             <a href="#projects" class="cta-btn">Explore Portfolio Work</a>
-            <a href="#contact" class="btn-secondary">Get in Touch</a>
+            <a href="mailto:motaleb13@gmail.com" class="btn-secondary">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              motaleb13@gmail.com
+            </a>
+            <a href="tel:+8801917895600" class="btn-secondary">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              +880 1917-895600
+            </a>
           </div>
         </div>
         <div class="stat-card-group">
           <div class="stat-card">
-            <div class="stat-number">13+</div>
-            <div class="stat-label">Years of Experience</div>
+            <div class="stat-number">13.4+</div>
+            <div class="stat-label">Years of MEAL Experience</div>
           </div>
           <div class="stat-card">
-            <div class="stat-number">50+</div>
-            <div class="stat-label">Field Missions & Reports</div>
+            <div class="stat-number">65+</div>
+            <div class="stat-label">Evaluations & Studies</div>
           </div>
           <div class="stat-card">
             <div class="stat-number">100%</div>
-            <div class="stat-label">Results Alignment (RBM)</div>
+            <div class="stat-label">RBM & Donor Compliance</div>
           </div>
           <div class="stat-card">
-            <div class="stat-number">GIS</div>
-            <div class="stat-label">Spatial & Hydrological Modeling</div>
+            <div class="stat-number">GIS/MIS</div>
+            <div class="stat-label">Spatial & Data Systems</div>
           </div>
         </div>
       </div>
@@ -608,7 +683,7 @@
     <div class="container">
       <div class="section-header">
         <span class="section-eyebrow">Professional Pillars</span>
-        <h2 class="section-title">Core Competencies & Tool Stack</h2>
+        <h2 class="section-title">MEAL Architecture & Core Competencies</h2>
       </div>
       <div class="grid-3">
         <!-- Pillar 1 -->
@@ -617,17 +692,18 @@
             <div class="card-icon">
               <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 20V10M18 20V4M6 20v-4"/></svg>
             </div>
-            <h3>MEAL & Results-Based Management</h3>
+            <h3>MEAL & Results-Based Management (RBM)</h3>
             <p>
-              Designing and maintaining comprehensive project M&E frameworks, ROAR indicators, CPD/UNSDCF outputs, and baseline/endline evaluation reports.
+              Designing and maintaining comprehensive project M&E frameworks, ROAR indicators, CPD/UNSDCF outputs, Performance Measurement Frameworks (PMF), Theory of Change, and baseline/midline/endline evaluations.
             </p>
           </div>
           <div class="tag-cloud">
             <span class="tag">Theory of Change</span>
-            <span class="tag">LogFrames</span>
+            <span class="tag">LogFrames & PMF</span>
             <span class="tag">ROAR Reporting</span>
             <span class="tag">SPSS & Stata</span>
             <span class="tag">KoboToolbox</span>
+            <span class="tag">Accountability (CRM)</span>
           </div>
         </div>
 
@@ -637,17 +713,17 @@
             <div class="card-icon">
               <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
             </div>
-            <h3>GIS Mapping & Spatial Modeling</h3>
+            <h3>GIS Mapping & Spatial Intelligence</h3>
             <p>
-              Spatial analysis for coastal vulnerability, groundwater quality parameters, road connectivity extractions, and union parishad infrastructure planning.
+              Spatial analysis for coastal vulnerability, hydrological modeling, groundwater salinity interpolation, Union Parishad road networks, and municipal master planning.
             </p>
           </div>
           <div class="tag-cloud">
             <span class="tag">ArcGIS / QGIS</span>
-            <span class="tag">Google Earth Pro</span>
+            <span class="tag">Google Earth Engine</span>
             <span class="tag">Spatial Interpolation</span>
-            <span class="tag">Network Mapping</span>
-            <span class="tag">Water Quality Analysis</span>
+            <span class="tag">Road Network Extraction</span>
+            <span class="tag">Hydrological Mapping</span>
           </div>
         </div>
 
@@ -657,16 +733,17 @@
             <div class="card-icon">
               <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
             </div>
-            <h3>Climate Adaptation & DRR</h3>
+            <h3>DRR, Climate & Urban Planning</h3>
             <p>
-              Field assessments and verification of climate-resilient housing, embankment protection schemes, saline intrusion solutions, and community livelihoods.
+              Field verification of climate-resilient housing, cyclone shelter audits, coastal embankment rehabilitation, municipal solid waste management, and disability-inclusive economic empowerment models.
             </p>
           </div>
           <div class="tag-cloud">
             <span class="tag">Resilient Housing</span>
-            <span class="tag">Embankment Rehabilitaion</span>
-            <span class="tag">Coastal Afforestation</span>
-            <span class="tag">Community Livelihoods</span>
+            <span class="tag">Embankment Rehabilitation</span>
+            <span class="tag">Emergency Response</span>
+            <span class="tag">Disability Inclusion</span>
+            <span class="tag">Master Planning</span>
           </div>
         </div>
       </div>
@@ -678,52 +755,99 @@
     <div class="container">
       <div class="section-header">
         <span class="section-eyebrow">Career Trajectory</span>
-        <h2 class="section-title">Professional Experience</h2>
+        <h2 class="section-title">Professional Experience (13.4+ Years)</h2>
       </div>
 
       <div class="timeline">
-        <!-- Experience Item 1 -->
+        <!-- Experience Item 1: UNDP -->
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <span class="timeline-date">UNDP Bangladesh</span>
-          <h3 class="timeline-title">M&E Associate / Development Specialist</h3>
+          <h3 class="timeline-title">Monitoring & Evaluation Associate / Development Specialist</h3>
           <div class="timeline-company">Climate Adaptation, Urban Resilience & Results Reporting</div>
           <div class="timeline-desc">
             <ul>
               <li>Synthesized field mission narratives and qualitative/quantitative indicators for climate adaptation interventions across Bhola, Rangpur, and coastal belts.</li>
-              <li>Ensured rigorous compliance of project targets with ROAR (Results Oriented Annual Report), CPD, and UNSDCF development frameworks.</li>
-              <li>Monitored progress on climate-resilient housing loans, low-cost community shelter verification, and embankment rehabilitation initiatives.</li>
-              <li>Assisted in MIS data verification, field spot checks, and multi-stakeholder progress reviews.</li>
+              <li>Ensured rigorous alignment of project milestones with ROAR (Results Oriented Annual Report), CPD, and UNSDCF development frameworks.</li>
+              <li>Supervised field monitoring and spot checks for climate-resilient housing, low-cost community shelters, and embankment rehabilitation initiatives.</li>
+              <li>Managed project MIS databases, streamlined reporting workflows, and supported multi-stakeholder and donor progress reviews.</li>
             </ul>
           </div>
         </div>
 
-        <!-- Experience Item 2 -->
+        <!-- Experience Item 2: Save the Children -->
         <div class="timeline-item">
           <div class="timeline-dot"></div>
-          <span class="timeline-date">Save the Children International / Development Sector</span>
+          <span class="timeline-date">Save the Children International, Bangladesh</span>
           <h3 class="timeline-title">Technical Specialist – MEAL / Monitoring Specialist</h3>
           <div class="timeline-company">Shishuder Jonno Program & Economic Inclusion Initiatives</div>
           <div class="timeline-desc">
             <ul>
-              <li>Led monitoring, evaluation, accountability, and learning (MEAL) systems for youth livelihood and inclusive community initiatives.</li>
-              <li>Conducted research and operationalized evaluations on economic inclusion pathways for adolescents with disabilities in coastal and climate-vulnerable communities.</li>
-              <li>Designed digital data collection workflows, indicator tracking sheets (IPT), and real-time dashboard analytics.</li>
+              <li>Headed Monitoring, Evaluation, Accountability, and Learning (MEAL) systems for youth livelihood and inclusive community development initiatives.</li>
+              <li>Conducted research and operationalized evaluations on economic inclusion pathways for adolescents with disabilities through the ICDP-SJ IGA initiatives.</li>
+              <li>Developed mobile data collection workflows (KoboToolbox/ODK), Indicator Performance Tracking Tables (IPTT), and interactive verification dashboards.</li>
+              <li>Coordinated field enumerator training, data quality audits (DQAs), and accountability/complaint response mechanisms (CRM).</li>
             </ul>
           </div>
         </div>
 
-        <!-- Experience Item 3 -->
+        <!-- Experience Item 3: Young Consultants -->
         <div class="timeline-item">
           <div class="timeline-dot"></div>
-          <span class="timeline-date">Consultancy & Advisory Engagements</span>
-          <h3 class="timeline-title">Urban Planner & Spatial Data Consultant</h3>
-          <div class="timeline-company">Young Consultants / Independent Advisory</div>
+          <span class="timeline-date">Young Consultants</span>
+          <h3 class="timeline-title">Urban Planner & Spatial Data Consultant / Pool of Experts</h3>
+          <div class="timeline-company">National Development Consultancies & Technical Bidding</div>
           <div class="timeline-desc">
             <ul>
-              <li>Prepared comprehensive technical and financial proposals for national development consultancies, aligning multi-disciplinary team CVs with client tender specifications.</li>
-              <li>Spearheaded GIS road network extraction and union spatial planning for localized administrative units (e.g., Lakkhitary and Mujibnagar).</li>
-              <li>Compiled detailed groundwater quality spatial parameter analyses across Barishal Division to identify salinity gradients and safe aquifer zones.</li>
+              <li>Led the formulation of technical and financial proposals for national and donor-funded consultancy tenders, aligning multi-disciplinary expert CVs (MIS, ERP, climate finance) to TOR requirements.</li>
+              <li>Conducted GIS road network extractions and baseline spatial mapping for Union Parishad master plans (including Lakkhitary and Mujibnagar Unions).</li>
+              <li>Executed comprehensive spatial parameter modeling of groundwater quality data across Barishal Division to delineate salinity gradients and potable aquifer zones.</li>
+              <li>Advised on solid waste management, municipal infrastructure assessments, and environmental planning compliance.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience Item 4: Pathfinder International / USAID Assignments -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">Pathfinder International / USAID Funded Interventions</span>
+          <h3 class="timeline-title">M&E & Field Assessment Consultant</h3>
+          <div class="timeline-company">Community Health, Family Planning & Adolescent Development</div>
+          <div class="timeline-desc">
+            <ul>
+              <li>Conducted programmatic monitoring and field verification across health facilities and community outreach centers in target districts.</li>
+              <li>Standardized monthly indicator tracking and baseline/midline assessment data for maternal, adolescent, and reproductive health services.</li>
+              <li>Delivered capacity-building workshops for local partner field officers on qualitative verification, data accuracy, and indicator tracking protocols.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience Item 5: UNICEF Supported Initiatives -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">UNICEF Supported Programs / Partner Engagements</span>
+          <h3 class="timeline-title">Planning & Monitoring Consultant</h3>
+          <div class="timeline-company">Child Protection, Emergency Preparedness & Education in Emergencies</div>
+          <div class="timeline-desc">
+            <ul>
+              <li>Implemented field monitoring protocols for child-friendly spaces, disaster emergency response kits, and community resilience mechanisms.</li>
+              <li>Assisted in third-party progress reviews, vulnerability index assessments, and multi-sectoral needs assessments in disaster-prone coastal upazilas.</li>
+              <li>Synthesized high-level evaluation briefs and thematic progress reports for donor compliance and local administrative coordination.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience Item 6: Urban & Rural Planning Practice -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">Urban & Regional Planning Engagements</span>
+          <h3 class="timeline-title">Urban & Regional Planner / GIS Analyst</h3>
+          <div class="timeline-company">Municipal Master Planning & Community Development</div>
+          <div class="timeline-desc">
+            <ul>
+              <li>Conducted physical feature surveys, land use zoning, and demographic projection models for regional towns and rural growth centers.</li>
+              <li>Formulated Disaster Risk Reduction (DRR) and drainage master plans to alleviate localized waterlogging and tidal surge vulnerability.</li>
+              <li>Synthesized participatory rural appraisal (PRA) data and facilitated citizen-led planning forums to integrate localized community needs into municipal budgets.</li>
             </ul>
           </div>
         </div>
@@ -742,11 +866,13 @@
       <div class="grid-3">
         <!-- Project 1 -->
         <div class="project-card">
-          <div class="project-category">Climate Resilience & M&E</div>
-          <h3 class="project-title">Coastal Housing & Embankment Verification</h3>
-          <p class="project-body">
-            Conducted on-site verification and results reporting for climate-resilient housing structures and community embankment reinforcements in vulnerable riverine unions across Bhola and Rangpur.
-          </p>
+          <div>
+            <div class="project-category">Climate Resilience & M&E</div>
+            <h3 class="project-title">Coastal Housing & Embankment Verification</h3>
+            <p class="project-body">
+              Conducted on-site verification and results reporting for climate-resilient housing structures, low-cost shelters, and community embankment reinforcements in vulnerable riverine unions across Bhola and Rangpur.
+            </p>
+          </div>
           <div class="tag-cloud">
             <span class="tag">M&E Spot Checks</span>
             <span class="tag">Vulnerability Audit</span>
@@ -756,11 +882,13 @@
 
         <!-- Project 2 -->
         <div class="project-card">
-          <div class="project-category">Spatial Intelligence</div>
-          <h3 class="project-title">Barishal Division Groundwater Quality Mapping</h3>
-          <p class="project-body">
-            Generated multi-parameter spatial GIS maps depicting salinity, arsenic, and iron distribution in coastal aquifers, assisting regional water supply planning and DRR assessments.
-          </p>
+          <div>
+            <div class="project-category">Spatial Intelligence</div>
+            <h3 class="project-title">Barishal Division Groundwater Quality Mapping</h3>
+            <p class="project-body">
+              Generated multi-parameter spatial GIS maps depicting salinity, arsenic, and iron distribution in coastal aquifers, assisting regional water supply planning, environmental impact assessments, and DRR strategies.
+            </p>
+          </div>
           <div class="tag-cloud">
             <span class="tag">GIS Spatial Analysis</span>
             <span class="tag">Water Quality</span>
@@ -770,15 +898,65 @@
 
         <!-- Project 3 -->
         <div class="project-card">
-          <div class="project-category">Social Inclusion Research</div>
-          <h3 class="project-title">Economic Inclusion for Persons with Disabilities</h3>
-          <p class="project-body">
-            Author and presenter of empirical poster research analyzing income-generating activities (IGA) and economic empowerment models for youth with disabilities at national conference symposia.
-          </p>
+          <div>
+            <div class="project-category">Social Inclusion Research</div>
+            <h3 class="project-title">Economic Inclusion for Persons with Disabilities</h3>
+            <p class="project-body">
+              Author and presenter of empirical research analyzing income-generating activities (IGA) and economic empowerment models for youth with disabilities at the International Conference on Economic Inclusion.
+            </p>
+          </div>
           <div class="tag-cloud">
             <span class="tag">Inclusive MEAL</span>
             <span class="tag">Conference Presentation</span>
-            <span class="tag">Livelihoods</span>
+            <span class="tag">Save the Children</span>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+          <div>
+            <div class="project-category">Local Governance & GIS</div>
+            <h3 class="project-title">Union Parishad Spatial & Road Network Master Plans</h3>
+            <p class="project-body">
+              Extracted road networks and mapped administrative assets for Lakkhitary and Mujibnagar Unions using high-resolution satellite imagery, establishing foundational GIS databases for rural connectivity.
+            </p>
+          </div>
+          <div class="tag-cloud">
+            <span class="tag">Satellite Extraction</span>
+            <span class="tag">Infrastructure GIS</span>
+            <span class="tag">Young Consultants</span>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card">
+          <div>
+            <div class="project-category">Child Protection & DRR</div>
+            <h3 class="project-title">UNICEF Emergency Response & Field Monitoring</h3>
+            <p class="project-body">
+              Supported third-party field evaluations and monitoring frameworks for child-friendly spaces, emergency school rehabilitation, and community contingency protocols in disaster-affected unions.
+            </p>
+          </div>
+          <div class="tag-cloud">
+            <span class="tag">Child Protection</span>
+            <span class="tag">DRR Monitoring</span>
+            <span class="tag">UNICEF Interventions</span>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card">
+          <div>
+            <div class="project-category">Health Systems & Monitoring</div>
+            <h3 class="project-title">USAID / Pathfinder Service Delivery Tracking</h3>
+            <p class="project-body">
+              Conducted routine data verification, indicator validation, and quality assessment across community health outreach initiatives, ensuring stringent donor reporting and operational compliance.
+            </p>
+          </div>
+          <div class="tag-cloud">
+            <span class="tag">Health M&E</span>
+            <span class="tag">Data Verification</span>
+            <span class="tag">Pathfinder Project</span>
           </div>
         </div>
       </div>
@@ -797,13 +975,13 @@
         <div class="edu-card">
           <div class="edu-degree">Master of Development Studies (MDS)</div>
           <div class="edu-inst">Islamic University</div>
-          <div class="edu-meta">Conferred 2016 &middot; Major in Development Economics, Policy & Research Methodologies</div>
+          <div class="edu-meta">Conferred 2016 &middot; CGPA 3.27 / 4.00 &middot; Major in Development Economics, Policy, M&E & Research Methodologies</div>
         </div>
 
         <div class="edu-card">
           <div class="edu-degree">Bachelor of Urban & Rural Planning (BURP)</div>
           <div class="edu-inst">Khulna University</div>
-          <div class="edu-meta">Conferred 2011 &middot; Regional Planning, Infrastructure Architecture, GIS & Environmental Modeling</div>
+          <div class="edu-meta">Conferred 2011 &middot; CGPA 3.10 / 4.00 &middot; Regional Planning, Infrastructure Architecture, GIS & Environmental Modeling</div>
         </div>
 
         <div class="edu-card">
@@ -820,15 +998,76 @@
     <div class="container">
       <div class="footer-content">
         <div class="contact-box">
-          <h3>Collaborate or Connect</h3>
+          <span class="section-eyebrow" style="color: var(--primary-light);">Get In Touch</span>
+          <h3>Let's Collaborate on Impactful Programs</h3>
           <p>
-            Interested in discussing Monitoring & Evaluation frameworks, climate adaptation initiatives, or GIS spatial analytics? Feel free to reach out.
+            Available for MEAL technical advisory, baseline/endline evaluations, climate adaptation results monitoring, and GIS spatial research. Connect directly via email, phone, or WhatsApp:
           </p>
+
+          <!-- Contact Cards Grid -->
+          <div class="contact-grid">
+            <!-- Email Card 1: Direct -->
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="contact-card-info">
+                <h4>Direct Email</h4>
+                <a href="mailto:motaleb13@gmail.com">motaleb13@gmail.com</a>
+              </div>
+            </div>
+
+            <!-- Mobile Phone Card -->
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div class="contact-card-info">
+                <h4>Mobile & WhatsApp</h4>
+                <a href="tel:+8801917895600">+880 1917-895600</a>
+              </div>
+            </div>
+
+            <!-- Email Card 2: Institutional -->
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="contact-card-info">
+                <h4>Institutional Email</h4>
+                <a href="mailto:khan.motaleb@undp.org">khan.motaleb@undp.org</a>
+              </div>
+            </div>
+
+            <!-- Location Card -->
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div class="contact-card-info">
+                <h4>Primary Location</h4>
+                <p>Dhaka, Bangladesh</p>
+              </div>
+            </div>
+          </div>
+
           <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
-            <a href="mailto:khan.motaleb@undp.org" class="cta-btn">Send Email Inquiry</a>
-            <a href="#about" class="btn-secondary">Return to Top</a>
+            <a href="mailto:motaleb13@gmail.com" class="cta-btn">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              Compose Email
+            </a>
+            <a href="https://wa.me/8801917895600" class="btn-secondary" target="_blank" rel="noopener">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+              WhatsApp Chat
+            </a>
+            <a href="tel:+8801917895600" class="btn-secondary">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              Call Directly
+            </a>
+            <a href="#about" class="btn-secondary">Back to Top</a>
           </div>
         </div>
+
         <div class="footer-links">
           <h4>Navigation</h4>
           <ul>
@@ -840,8 +1079,9 @@
           </ul>
         </div>
       </div>
+
       <div class="copyright">
-        &copy; 2026 Khan Abdul Motaleb. All rights reserved. &middot; Professional M&E Portfolio.
+        &copy; 2026 Khan Abdul Motaleb. All rights reserved. &middot; Monitoring, Evaluation, Accountability and Learning (MEAL) Expert Portfolio.
       </div>
     </div>
   </footer>

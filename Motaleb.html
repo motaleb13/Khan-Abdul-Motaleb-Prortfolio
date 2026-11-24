@@ -51,11 +51,20 @@
     }
 
     /* Universal Heading Contrast Enforcement */
-  h1, h2, h3, h4, h5, h6,
+/* Keep headings visible on the dark background */
+h1, h2, h3, h4, h5, h6,
 .brand, .section-title, .timeline-title,
 .project-title, .edu-degree {
   color: #FFFFFF !important;
   -webkit-text-fill-color: #FFFFFF !important;
+}
+
+/* Use a solid accent instead of transparent gradient text */
+.hero h1 span {
+  background: none !important;
+  -webkit-background-clip: border-box;
+  -webkit-text-fill-color: #38BDF8 !important;
+  color: #38BDF8 !important;
 }
 
     p, li, span, div {

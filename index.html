@@ -1,11 +1,19 @@
+Khan Abdul Motaleb — Professional Web Portfolio
+
+This portfolio is packaged as a high-performance, single-file web application (index.html). It requires no external dependencies, bundlers, or heavy frameworks, making it directly compatible with GitHub Pages, Blogger / Blogspot, and custom domains.
+
+1. Complete Standalone Website Code (index.html)
+
+Save the following code block as index.html for GitHub Pages, or paste it directly into Blogger (see deployment instructions below).
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Khan Abdul Motaleb | M&E Associate & Urban Planner</title>
-  <meta name="description" content="Professional portfolio of Khan Abdul Motaleb - Monitoring & Evaluation (M&E/MEAL) Specialist, Urban Planner, and GIS/Data Analyst." />
-  
+  <title>Khan Abdul Motaleb | M&E Associate, Urban Planner & GIS Consultant</title>
+  <meta name="description" content="Professional portfolio of Khan Abdul Motaleb - 13.4+ years of expertise in Monitoring & Evaluation (MEAL), Urban & Rural Planning, GIS Spatial Intelligence, DRR, and Climate Adaptation." />
+
   <style>
     /* ==========================================================================
        MODERN CSS DESIGN SYSTEM & VARIABLES
@@ -350,7 +358,7 @@
 
     .timeline-item {
       position: relative;
-      margin-bottom: 2.5rem;
+      margin-bottom: 3rem;
     }
 
     .timeline-item:last-child {
@@ -400,7 +408,7 @@
     }
 
     .timeline-desc li {
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.45rem;
     }
 
     /* ==========================================================================
@@ -412,6 +420,9 @@
       border-radius: 12px;
       padding: 1.75rem;
       transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     .project-card:hover {
@@ -531,7 +542,7 @@
         gap: 2.5rem;
       }
       .nav-links {
-        display: none; /* Can be toggled with hamburger in extended setups */
+        display: none;
       }
       .footer-content {
         grid-template-columns: 1fr;
@@ -569,12 +580,10 @@
     <div class="container">
       <div class="hero-content">
         <div>
-          <div class="badge-pill">M&E Associate &middot; Development Specialist</div>
+          <div class="badge-pill">M&E Associate &middot; Urban Planner &middot; GIS Specialist</div>
           <h1>Driving Impact Through <span>Evidence-Based Planning</span> & Adaptation</h1>
           <p>
-            Development practitioner with 13+ years of expertise spanning Monitoring & Evaluation (MEAL), 
-            Urban & Regional Planning, and GIS spatial intelligence. Specialized in climate adaptation, disaster risk reduction (DRR), 
-            and UN/UNDP results framework architecture.
+            Development professional with <strong>13.4+ years</strong> of multidisciplinary expertise spanning Monitoring, Evaluation, Accountability, and Learning (MEAL), Urban & Rural Planning, GIS Spatial Intelligence, and Disaster Risk Reduction (DRR). Proven track record supporting UN agencies, international NGOs, and high-level national development consultancies.
           </p>
           <div class="hero-actions">
             <a href="#projects" class="cta-btn">Explore Portfolio Work</a>
@@ -583,20 +592,20 @@
         </div>
         <div class="stat-card-group">
           <div class="stat-card">
-            <div class="stat-number">13+</div>
+            <div class="stat-number">13.4+</div>
             <div class="stat-label">Years of Experience</div>
           </div>
           <div class="stat-card">
-            <div class="stat-number">50+</div>
-            <div class="stat-label">Field Missions & Reports</div>
+            <div class="stat-number">65+</div>
+            <div class="stat-label">Missions, Audits & Studies</div>
           </div>
           <div class="stat-card">
             <div class="stat-number">100%</div>
-            <div class="stat-label">Results Alignment (RBM)</div>
+            <div class="stat-label">RBM & Donor Compliance</div>
           </div>
           <div class="stat-card">
-            <div class="stat-number">GIS</div>
-            <div class="stat-label">Spatial & Hydrological Modeling</div>
+            <div class="stat-number">GIS/MIS</div>
+            <div class="stat-label">Spatial & Database Architect</div>
           </div>
         </div>
       </div>
@@ -619,7 +628,7 @@
             </div>
             <h3>MEAL & Results-Based Management</h3>
             <p>
-              Designing and maintaining comprehensive project M&E frameworks, ROAR indicators, CPD/UNSDCF outputs, and baseline/endline evaluation reports.
+              Designing and maintaining comprehensive project M&E frameworks, ROAR indicators, CPD/UNSDCF outputs, Performance Measurement Frameworks (PMF), and baseline/endline evaluations.
             </p>
           </div>
           <div class="tag-cloud">
@@ -628,6 +637,7 @@
             <span class="tag">ROAR Reporting</span>
             <span class="tag">SPSS & Stata</span>
             <span class="tag">KoboToolbox</span>
+            <span class="tag">DHIS2 / MIS</span>
           </div>
         </div>
 
@@ -637,17 +647,17 @@
             <div class="card-icon">
               <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
             </div>
-            <h3>GIS Mapping & Spatial Modeling</h3>
+            <h3>GIS Mapping & Spatial Intelligence</h3>
             <p>
-              Spatial analysis for coastal vulnerability, groundwater quality parameters, road connectivity extractions, and union parishad infrastructure planning.
+              Spatial analysis for coastal vulnerability, hydrological modeling, groundwater salinity interpolation, Union Parishad road networks, and municipal zoning.
             </p>
           </div>
           <div class="tag-cloud">
             <span class="tag">ArcGIS / QGIS</span>
-            <span class="tag">Google Earth Pro</span>
+            <span class="tag">Google Earth Engine</span>
             <span class="tag">Spatial Interpolation</span>
-            <span class="tag">Network Mapping</span>
-            <span class="tag">Water Quality Analysis</span>
+            <span class="tag">Road Network Extraction</span>
+            <span class="tag">Hydrological Mapping</span>
           </div>
         </div>
 
@@ -657,16 +667,17 @@
             <div class="card-icon">
               <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
             </div>
-            <h3>Climate Adaptation & DRR</h3>
+            <h3>DRR, Climate & Urban Planning</h3>
             <p>
-              Field assessments and verification of climate-resilient housing, embankment protection schemes, saline intrusion solutions, and community livelihoods.
+              Field verification of climate-resilient housing, cyclone shelter audits, coastal embankment rehabilitation, waste management frameworks, and disability-inclusive economic models.
             </p>
           </div>
           <div class="tag-cloud">
             <span class="tag">Resilient Housing</span>
-            <span class="tag">Embankment Rehabilitaion</span>
-            <span class="tag">Coastal Afforestation</span>
-            <span class="tag">Community Livelihoods</span>
+            <span class="tag">Embankment Rehabilitation</span>
+            <span class="tag">Emergency Response</span>
+            <span class="tag">Waste Management</span>
+            <span class="tag">Disability Inclusion</span>
           </div>
         </div>
       </div>
@@ -678,11 +689,11 @@
     <div class="container">
       <div class="section-header">
         <span class="section-eyebrow">Career Trajectory</span>
-        <h2 class="section-title">Professional Experience</h2>
+        <h2 class="section-title">Professional Experience (13.4+ Years)</h2>
       </div>
 
       <div class="timeline">
-        <!-- Experience Item 1 -->
+        <!-- Experience Item 1: UNDP -->
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <span class="timeline-date">UNDP Bangladesh</span>
@@ -691,39 +702,86 @@
           <div class="timeline-desc">
             <ul>
               <li>Synthesized field mission narratives and qualitative/quantitative indicators for climate adaptation interventions across Bhola, Rangpur, and coastal belts.</li>
-              <li>Ensured rigorous compliance of project targets with ROAR (Results Oriented Annual Report), CPD, and UNSDCF development frameworks.</li>
-              <li>Monitored progress on climate-resilient housing loans, low-cost community shelter verification, and embankment rehabilitation initiatives.</li>
-              <li>Assisted in MIS data verification, field spot checks, and multi-stakeholder progress reviews.</li>
+              <li>Ensured rigorous alignment of project milestones with ROAR (Results Oriented Annual Report), CPD, and UNSDCF development frameworks.</li>
+              <li>Supervised field monitoring and spot checks for climate-resilient housing, low-cost community shelters, and embankment rehabilitation initiatives.</li>
+              <li>Managed project MIS databases, streamlined reporting workflows, and supported multi-stakeholder and donor progress reviews.</li>
             </ul>
           </div>
         </div>
 
-        <!-- Experience Item 2 -->
+        <!-- Experience Item 2: Save the Children -->
         <div class="timeline-item">
           <div class="timeline-dot"></div>
-          <span class="timeline-date">Save the Children International / Development Sector</span>
+          <span class="timeline-date">Save the Children International, Bangladesh</span>
           <h3 class="timeline-title">Technical Specialist – MEAL / Monitoring Specialist</h3>
           <div class="timeline-company">Shishuder Jonno Program & Economic Inclusion Initiatives</div>
           <div class="timeline-desc">
             <ul>
-              <li>Led monitoring, evaluation, accountability, and learning (MEAL) systems for youth livelihood and inclusive community initiatives.</li>
-              <li>Conducted research and operationalized evaluations on economic inclusion pathways for adolescents with disabilities in coastal and climate-vulnerable communities.</li>
-              <li>Designed digital data collection workflows, indicator tracking sheets (IPT), and real-time dashboard analytics.</li>
+              <li>Headed Monitoring, Evaluation, Accountability, and Learning (MEAL) systems for youth livelihood and inclusive community development initiatives.</li>
+              <li>Conducted research and operationalized evaluations on economic inclusion pathways for adolescents with disabilities through the ICDP-SJ IGA initiatives.</li>
+              <li>Developed mobile data collection workflows (KoboToolbox/ODK), Indicator Performance Tracking Tables (IPTT), and interactive verification dashboards.</li>
+              <li>Coordinated field enumerator training, data quality audits (DQAs), and accountability/complaint response mechanisms (CRM).</li>
             </ul>
           </div>
         </div>
 
-        <!-- Experience Item 3 -->
+        <!-- Experience Item 3: Young Consultants -->
         <div class="timeline-item">
           <div class="timeline-dot"></div>
-          <span class="timeline-date">Consultancy & Advisory Engagements</span>
-          <h3 class="timeline-title">Urban Planner & Spatial Data Consultant</h3>
-          <div class="timeline-company">Young Consultants / Independent Advisory</div>
+          <span class="timeline-date">Young Consultants</span>
+          <h3 class="timeline-title">Urban Planner & Spatial Data Consultant / Pool of Experts</h3>
+          <div class="timeline-company">National Development Consultancies & Technical Bidding</div>
           <div class="timeline-desc">
             <ul>
-              <li>Prepared comprehensive technical and financial proposals for national development consultancies, aligning multi-disciplinary team CVs with client tender specifications.</li>
-              <li>Spearheaded GIS road network extraction and union spatial planning for localized administrative units (e.g., Lakkhitary and Mujibnagar).</li>
-              <li>Compiled detailed groundwater quality spatial parameter analyses across Barishal Division to identify salinity gradients and safe aquifer zones.</li>
+              <li>Led the formulation of technical and financial proposals for national and donor-funded consultancy tenders, aligning multi-disciplinary expert CVs (MIS, ERP, climate finance) to TOR requirements.</li>
+              <li>Conducted GIS road network extractions and baseline spatial mapping for Union Parishad master plans (including Lakkhitary and Mujibnagar Unions).</li>
+              <li>Executed comprehensive spatial parameter modeling of groundwater quality data across Barishal Division to delineate salinity gradients and potable aquifer zones.</li>
+              <li>Advised on solid waste management, municipal infrastructure assessments, and environmental planning compliance.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience Item 4: Pathfinder International / USAID Assignments -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">Pathfinder International / USAID Funded Interventions</span>
+          <h3 class="timeline-title">M&E & Field Assessment Consultant</h3>
+          <div class="timeline-company">Community Health, Family Planning & Adolescent Development</div>
+          <div class="timeline-desc">
+            <ul>
+              <li>Conducted programmatic monitoring and field verification across health facilities and community outreach centers in target districts.</li>
+              <li>Standardized monthly indicator tracking and baseline/midline assessment data for maternal, adolescent, and reproductive health services.</li>
+              <li>Delivered capacity-building workshops for local partner field officers on qualitative verification, data accuracy, and indicator tracking protocols.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience Item 5: UNICEF Supported Initiatives -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">UNICEF Supported Programs / Partner Engagements</span>
+          <h3 class="timeline-title">Planning & Monitoring Consultant</h3>
+          <div class="timeline-company">Child Protection, Emergency Preparedness & Education in Emergencies</div>
+          <div class="timeline-desc">
+            <ul>
+              <li>Implemented field monitoring protocols for child-friendly spaces, disaster emergency response kits, and community resilience mechanisms.</li>
+              <li>Assisted in third-party progress reviews, vulnerability index assessments, and multi-sectoral needs assessments in disaster-prone coastal upazilas.</li>
+              <li>Synthesized high-level evaluation briefs and thematic progress reports for donor compliance and local administrative coordination.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience Item 6: Urban & Rural Planning Practice -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">Urban & Regional Planning Engagements</span>
+          <h3 class="timeline-title">Urban & Regional Planner / GIS Analyst</h3>
+          <div class="timeline-company">Municipal Master Planning & Community Development</div>
+          <div class="timeline-desc">
+            <ul>
+              <li>Conducted physical feature surveys, land use zoning, and demographic projection models for regional towns and rural growth centers.</li>
+              <li>Formulated Disaster Risk Reduction (DRR) and drainage master plans to alleviate localized waterlogging and tidal surge vulnerability.</li>
+              <li>Synthesized participatory rural appraisal (PRA) data and facilitated citizen-led planning forums to integrate localized community needs into municipal budgets.</li>
             </ul>
           </div>
         </div>
@@ -742,11 +800,13 @@
       <div class="grid-3">
         <!-- Project 1 -->
         <div class="project-card">
-          <div class="project-category">Climate Resilience & M&E</div>
-          <h3 class="project-title">Coastal Housing & Embankment Verification</h3>
-          <p class="project-body">
-            Conducted on-site verification and results reporting for climate-resilient housing structures and community embankment reinforcements in vulnerable riverine unions across Bhola and Rangpur.
-          </p>
+          <div>
+            <div class="project-category">Climate Resilience & M&E</div>
+            <h3 class="project-title">Coastal Housing & Embankment Verification</h3>
+            <p class="project-body">
+              Conducted on-site verification and results reporting for climate-resilient housing structures, low-cost shelters, and community embankment reinforcements in vulnerable riverine unions across Bhola and Rangpur.
+            </p>
+          </div>
           <div class="tag-cloud">
             <span class="tag">M&E Spot Checks</span>
             <span class="tag">Vulnerability Audit</span>
@@ -756,11 +816,13 @@
 
         <!-- Project 2 -->
         <div class="project-card">
-          <div class="project-category">Spatial Intelligence</div>
-          <h3 class="project-title">Barishal Division Groundwater Quality Mapping</h3>
-          <p class="project-body">
-            Generated multi-parameter spatial GIS maps depicting salinity, arsenic, and iron distribution in coastal aquifers, assisting regional water supply planning and DRR assessments.
-          </p>
+          <div>
+            <div class="project-category">Spatial Intelligence</div>
+            <h3 class="project-title">Barishal Division Groundwater Quality Mapping</h3>
+            <p class="project-body">
+              Generated multi-parameter spatial GIS maps depicting salinity, arsenic, and iron distribution in coastal aquifers, assisting regional water supply planning, environmental impact assessments, and DRR strategies.
+            </p>
+          </div>
           <div class="tag-cloud">
             <span class="tag">GIS Spatial Analysis</span>
             <span class="tag">Water Quality</span>
@@ -770,15 +832,65 @@
 
         <!-- Project 3 -->
         <div class="project-card">
-          <div class="project-category">Social Inclusion Research</div>
-          <h3 class="project-title">Economic Inclusion for Persons with Disabilities</h3>
-          <p class="project-body">
-            Author and presenter of empirical poster research analyzing income-generating activities (IGA) and economic empowerment models for youth with disabilities at national conference symposia.
-          </p>
+          <div>
+            <div class="project-category">Social Inclusion Research</div>
+            <h3 class="project-title">Economic Inclusion for Persons with Disabilities</h3>
+            <p class="project-body">
+              Author and presenter of empirical research analyzing income-generating activities (IGA) and economic empowerment models for youth with disabilities at the International Conference on Economic Inclusion.
+            </p>
+          </div>
           <div class="tag-cloud">
             <span class="tag">Inclusive MEAL</span>
             <span class="tag">Conference Presentation</span>
-            <span class="tag">Livelihoods</span>
+            <span class="tag">Save the Children</span>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+          <div>
+            <div class="project-category">Local Governance & GIS</div>
+            <h3 class="project-title">Union Parishad Spatial & Road Network Master Plans</h3>
+            <p class="project-body">
+              Extracted road networks and mapped administrative assets for Lakkhitary and Mujibnagar Unions using high-resolution satellite imagery, establishing foundational GIS databases for rural connectivity.
+            </p>
+          </div>
+          <div class="tag-cloud">
+            <span class="tag">Satellite Extraction</span>
+            <span class="tag">Infrastructure GIS</span>
+            <span class="tag">Young Consultants</span>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card">
+          <div>
+            <div class="project-category">Child Protection & DRR</div>
+            <h3 class="project-title">UNICEF Emergency Response & Field Monitoring</h3>
+            <p class="project-body">
+              Supported third-party field evaluations and monitoring frameworks for child-friendly spaces, emergency school rehabilitation, and community contingency protocols in disaster-affected unions.
+            </p>
+          </div>
+          <div class="tag-cloud">
+            <span class="tag">Child Protection</span>
+            <span class="tag">DRR Monitoring</span>
+            <span class="tag">UNICEF Interventions</span>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card">
+          <div>
+            <div class="project-category">Health Systems & Monitoring</div>
+            <h3 class="project-title">USAID / Pathfinder Service Delivery Tracking</h3>
+            <p class="project-body">
+              Conducted routine data verification, indicator validation, and quality assessment across community health outreach initiatives, ensuring stringent donor reporting and operational compliance.
+            </p>
+          </div>
+          <div class="tag-cloud">
+            <span class="tag">Health M&E</span>
+            <span class="tag">Data Verification</span>
+            <span class="tag">Pathfinder Project</span>
           </div>
         </div>
       </div>
@@ -797,13 +909,13 @@
         <div class="edu-card">
           <div class="edu-degree">Master of Development Studies (MDS)</div>
           <div class="edu-inst">Islamic University</div>
-          <div class="edu-meta">Conferred 2016 &middot; Major in Development Economics, Policy & Research Methodologies</div>
+          <div class="edu-meta">Conferred 2016 &middot; CGPA 3.27 / 4.00 &middot; Major in Development Economics, Policy, M&E & Research Methodologies</div>
         </div>
 
         <div class="edu-card">
           <div class="edu-degree">Bachelor of Urban & Rural Planning (BURP)</div>
           <div class="edu-inst">Khulna University</div>
-          <div class="edu-meta">Conferred 2011 &middot; Regional Planning, Infrastructure Architecture, GIS & Environmental Modeling</div>
+          <div class="edu-meta">Conferred 2011 &middot; CGPA 3.10 / 4.00 &middot; Regional Planning, Infrastructure Architecture, GIS & Environmental Modeling</div>
         </div>
 
         <div class="edu-card">
@@ -841,7 +953,7 @@
         </div>
       </div>
       <div class="copyright">
-        &copy; 2026 Khan Abdul Motaleb. All rights reserved. &middot; Professional M&E Portfolio.
+        &copy; 2026 Khan Abdul Motaleb. All rights reserved. &middot; Professional M&E & Urban Planning Portfolio.
       </div>
     </div>
   </footer>
